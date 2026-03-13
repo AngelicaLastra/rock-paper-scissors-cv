@@ -1,4 +1,4 @@
-# Rock Paper Scissors — Computer Vision
+# Rock Paper Scissors, Computer Vision
 
 Play rock-paper-scissors against your computer using hand gestures detected via your webcam.
 
@@ -45,4 +45,4 @@ python rock-paper-scissors-cv.py
 
 - Python 3.9+
 - A webcam
-- Linux (uses V4L2 capture backend — on macOS/Windows, you may need to remove the `cv2.CAP_V4L2` argument)
+- Linux (uses V4L2 capture backend on macOS/Windows, you may need to remove the `cv2.CAP_V4L2` argument)
