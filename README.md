@@ -1,10 +1,10 @@
-# Rock Paper Scissors — Computer Vision
+# Rock Paper Scissors, Computer Vision
 
 Play rock-paper-scissors against your computer using hand gestures detected via your webcam.
 
 Built with [MediaPipe Hand Landmarker](https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker) and OpenCV.
 
-<video src="https://github.com/user-attachments/assets/game_play.mp4" controls></video>
+<video src="https://github.com/user-attachments/assets/30b120b7-548d-47cc-a065-d3acdcda3fed" autoplay muted playsinline controls></video>
 
 ## How It Works
 
@@ -45,4 +45,4 @@ python rock-paper-scissors-cv.py
 
 - Python 3.9+
 - A webcam
-- Linux (uses V4L2 capture backend — on macOS/Windows, you may need to remove the `cv2.CAP_V4L2` argument)
+- Linux (uses V4L2 capture backend on macOS/Windows, you may need to remove the `cv2.CAP_V4L2` argument)
