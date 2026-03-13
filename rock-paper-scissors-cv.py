@@ -98,9 +98,7 @@ def main():
     outcome = None
     outcome_color = (255, 255, 255)
     player_final = None
-
-    print("Get ready! Show your hand in 3... 2... 1...")
-    countdown_end = time.time() + 3
+    countdown_end = None
 
     try:
         while cap.isOpened():
@@ -108,12 +106,16 @@ def main():
             if not success:
                 break
 
+            if countdown_end is None:
+                print("Get ready! Show your hand in 3... 2... 1...")
+                countdown_end = time.time() + 3
+
             rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb_frame)
             landmarker.detect_async(mp_image, timestamp_ms)
             timestamp_ms += 33
 
-            remaining = int(countdown_end - time.time())
+            remaining = math.ceil(countdown_end - time.time())
 
             if remaining > 0:
                 cv2.putText(frame, str(remaining), (300, 250),

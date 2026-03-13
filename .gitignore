@@ -1,6 +1,9 @@
 # Model files
 *.task
 
+# Video assets (hosted on GitHub)
+*.mp4
+
 # Python
 __pycache__/
 *.py[cod]
