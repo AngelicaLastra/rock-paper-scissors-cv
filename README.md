@@ -4,7 +4,7 @@ Play rock-paper-scissors against your computer using hand gestures detected via 
 
 Built with [MediaPipe Hand Landmarker](https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker) and OpenCV.
 
-https://github.com/user-attachments/assets/game_play.mp4
+<video src="https://github.com/user-attachments/assets/game_play.mp4" controls></video>
 
 ## How It Works
 
